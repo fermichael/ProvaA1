@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helicópteros de Luxo</title>
+
+    <!-- Ícones e CSS externos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- Bootstrap e estilos próprios -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+        <div class="container">
+            <!-- Logomarca -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="imagens/logo.jpg" alt="Logomarca Helicópteros de Luxo" height="40" class="me-2">
+                <div>
+                    <span class="fw-semibold text-dark">Helicópteros de Luxo</span><br>
+                    <small class="text-muted">Modelos Exclusivos</small>
+                </div>
+            </a>
+
+            <!-- Botão do menu móvel -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-primary" href="Eurocopter.html">Eurocopter</a></li>
+                    <li class="nav-item"><a class="nav-link text-success" href="Bell.html">Bell</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="Mercedes.html">Mercedes</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-secondary" href="#" id="modelosDropdown" role="button"
+                            data-bs-toggle="dropdown">Modelos</a>
+                        <ul class="dropdown-menu" aria-labelledby="modelosDropdown">
+                            <li><a class="dropdown-item" href="#">Eurocopter</a></li>
+                            <li><a class="dropdown-item" href="#">Bell</a></li>
+                            <li><a class="dropdown-item" href="#">Mercedes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção principal com imagem centralizada -->
+    <section class="bg-light py-5 text-center">
+        <div class="container">
+            <img src="imagens/logo.jpg" alt="Helicópteros"
+                class="d-block mx-auto img-fluid w-75 mb-4 rounded shadow">
+            <h1 class="fw-bold text-dark">Helicópteros de Luxo</h1>
+            <p class="text-muted fs-5">Modelos Únicos e Exclusivos</p>
+        </div>
+    </section>
+
+    <!-- Conteúdo principal -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Coluna 1 -->
+                <div class="col-md-6">
+                    <h2 class="text-primary">Bem-vindo ao site Helicópteros de Luxo</h2>
+                    <p class="lead text-muted">Aqui você encontra modelos únicos, sofisticados e prontos para voar.
+                        Descubra o que há de mais moderno na aviação executiva.</p>
+                </div>
+
+                <!-- Coluna 2 -->
+                <div class="col-md-6">
+                    <h2 class="text-success">Como chegar</h2>
+                    <p>Você nos encontrará no Centro da Cidade Aeroviária, na Rua Sem Número.</p>
+
+                    <!-- Mapa interativo centralizado -->
+                    <div class="text-center mt-4">
+                        <iframe width="425" height="350"
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=-47.95223236083985%2C-15.896208890527815%2C-47.88717269897462%2C-15.847747106092061&amp;layer=mapnik&amp;marker=-15.871979455133907%2C-47.91970252990723"
+                            style="border: 1px solid black"></iframe>
+                        <br />
+                        <small>
+                            <a href="https://www.openstreetmap.org/?mlat=-15.87198&amp;mlon=-47.91970#map=14/-15.87198/-47.91970"
+                                target="_blank">Ver mapa ampliado</a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer style="background: linear-gradient(135deg, #181717 0%, #3f3f3f 100%);
+        color: #fff;
+        text-align: center;
+        padding: 2rem 1rem;
+        font-family: 'Poppins', sans-serif;">
+        <div class="container">
+            <p style="margin-bottom: 0.5rem; font-size: 1.2rem;">🚁 Escolha o modelo que combina melhor com você</p>
+
+            <!-- Ícones de redes sociais -->
+            <div style="margin: 1rem 0;">
+                <a href="https://www.instagram.com" target="_blank" style="color: #fff; margin: 0 10px;">
+                    <i class="fab fa-instagram fa-lg"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" style="color: #fff; margin: 0 10px;">
+                    <i class="fab fa-facebook fa-lg"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" style="color: #fff; margin: 0 10px;">
+                    <i class="fab fa-twitter fa-lg"></i>
+                </a>
+            </div>
+
+            <p style="margin-bottom: 0; font-size: 0.9rem;">© 2025 Helicópteros de Luxo — Todos os direitos reservados
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/configuracoes.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

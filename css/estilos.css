@@ -1,0 +1,120 @@
+/* ===== Fonte global ===== */
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f8f9fa; /* Fundo neutro e elegante */
+  color: #212529; /* Texto escuro e legível */
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  font-size: 16px;
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Marca / Logotipo */
+.navbar-brand span {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+.navbar-brand small {
+  font-size: 0.85rem;
+  color: #fd7e14;
+}
+
+.navbar-brand img {
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.05);
+}
+
+/* Links do menu */
+.nav-link {
+  position: relative;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ===== CORES PERSONALIZADAS ===== */
+.text-primary,
+.text-success,
+.text-danger,
+.text-purple {
+  color: #19191a !important;
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown-menu {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-item {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #003366;
+  color: #f8f9fa;
+}
+
+/* ===== IMAGENS ===== */
+
+/* Imagem da página inicial */
+.hero-img {
+  display: block;
+  margin: 30px auto;
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Páginas de modelos */
+.Eurocopter,
+.Bell,
+.Mercedes {
+  display: block;
+  margin: 30px auto;
+  width: 70%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Eurocopter:hover,
+.Bell:hover,
+.Mercedes:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
