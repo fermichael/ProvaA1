@@ -1,149 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mercedes - Helicópteros de Luxo</title>
+    <title>EC 145 Mercedes-Benz Style</title>
+   
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 
-    <!-- Font Awesome e Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <style>
-        /* ===== ESTILOS PERSONALIZADOS ===== */
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f8f9fa;
-        }
-
-        p {
-            text-align: center;
-            font-size: 1.1rem;
-            color: #333;
-            margin: 30px auto;
-            width: 80%;
-        }
-
-        /* Centraliza e estiliza a imagem */
-        .Mercedes {
-            display: block;
-            margin: 30px auto;
-            width: 70%;
-            max-width: 900px;
-            border-radius: 10px;
-            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
-            transition: transform 0.4s ease, box-shadow 0.4s ease;
-        }
-
-        .Mercedes:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
-        }
-
-        footer {
-            background: linear-gradient(135deg, #181717 0%, #3f3f3f 100%);
-            color: #fff;
-            text-align: center;
-            padding: 2rem 1rem;
-        }
-
-        footer a {
-            color: #fff;
-            margin: 0 10px;
-            transition: color 0.3s ease;
-        }
-
-        footer a:hover {
-            color: #00aced;
-        }
-    </style>
 </head>
 
 <body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="imagens/logo.jpeg" alt="Helicópteros de Luxo">
+      </a>
+    </div>
 
-    <!-- ===== NAVBAR ===== -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
-        <div class="container">
-            <!-- Logomarca -->
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="imagens/logo.jpg" alt="Helicópteros de Luxo" height="40" class="me-2">
-                <div>
-                    <span class="fw-semibold text-dark">Helicópteros de Luxo</span><br>
-                    <small class="text-muted">Modelos exclusivos</small>
-                </div>
-            </a>
+    <ul id="menu">
+      <li><a href="Eurocopter.html">Eurocopter</a></li>
+      <li><a href="Bell.html">Bell</a></li>
+      <li><a href="Mercedes.html">Mercedes</a></li>
+    </ul>
 
-            <!-- Botão menu mobile -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
 
-            <!-- Menu -->
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-primary" href="Eurocopter.html">Eurocopter</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-success" href="Bell.html">Bell</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-danger" href="Mercedes.html">Mercedes</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-secondary" href="#" id="poçõesDropdown" role="button"
-                            data-bs-toggle="dropdown">Modelos Especiais</a>
-                        <ul class="dropdown-menu" aria-labelledby="poçõesDropdown">
-                            <li><a class="dropdown-item" href="#">Sérum da Serenidade</a></li>
-                            <li><a class="dropdown-item" href="#">Filtro da Fortuna</a></li>
-                            <li><a class="dropdown-item" href="#">Licor do Luar Místico</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+    <main>
+      <section id="coluna-section">
+        <div class="coluna">
+            <h2>EC 145 Mercedes-Benz Style</h2>
+            <img src="imagens/mercedes.jpg" alt="Mercedes-Benz">
+            <p>O EC 145 Mercedes-Benz Style, a esportividade e potência da marca de helicópteros franco-alemã Eurocopter aliadas ao luxo e sofisticação da fabricante de veículos Mercedes-Benz foram os ingredientes principais para o desenvolvimento do EC 145 Mercedes-Benz Style.<br> O helicóptero foi construído com materiais exclusivos que lhe renderam boas doses de elegância, conforto e segurança.<br> O EC 145 é o único de sua categoria que acomoda até oito passageiros e de maneira bastante espaçosa, pois todos os assentos são montados em trilhos que podem ser removidos com facilidade para que haja um espaço interno maior para bagagens. <br> Além disso, o helicóptero possui três porta-objetos, uma geladeira, uma mesa e dois monitores de 15 polegadas. O layout da cabine foi inspirado na Mercedes Classe “R”.<br>A aeronave é equipada com duas turbinas Turbomeca ARRIEL 1E2 de 770 hp cada uma e atinge velocidade máxima de 268 km/h com autonomia de 680 km.</p>
         </div>
-    </nav>
+      </section>
 
-    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
-    <main class="container text-center my-5">
-        <p>
-            Combinando suco de framboesa com capim-limão, raspas de gelo e o fruto da roseira-brava,
-            este drink supergelado vai clarear e revigorar sua mente.
-        </p>
 
-        <img src="imagens/mercedes.jpg" alt="Helicóptero Mercedes" class="Mercedes">
     </main>
 
-    <!-- ===== RODAPÉ ===== -->
     <footer>
-        <div class="container">
-            <p style="margin-bottom: 0.5rem; font-size: 1.2rem;">
-                🚁 Escolha o modelo que combina melhor com você
-            </p>
+        <p>Explore os Helicópteros de Luxo mais fantásticos e luxuosos</p>
+        <br>
+        <p>Collab entre Mercedes-Benz e Airbus Helicopters</p>
+        <br>
+        <a href="https://www.facebook.com/MercedesBenz">Facebook - Mercedes-Benz</a> | 
+        <a href="https://www.instagram.com/mercedesbenz/">Instagram - Mercedes-Benz</a> | 
+        <a href="https://twitter.com/MercedesBenz">Twitter - Mercedes-Benz</a>
+        <br>
+        <a href="https://www.facebook.com/AirbusHelicopters">Facebook - Airbus Helicopters</a> | 
+        <a href="https://www.instagram.com/airbus_helicopters/">Instagram - Airbus Helicopters</a> |
+        <a href="https://twitter.com/AirbusHeli">Twitter - Airbus Helicopters</a>
 
-            <!-- Ícones sociais -->
-            <div style="margin: 1rem 0;">
-                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
-                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
-                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
-            </div>
-
-            <p style="margin-bottom: 0; font-size: 0.9rem;">
-                © 2025 Helicópteros de Luxo — Todos os direitos reservados
-            </p>
-        </div>
+        <p>© 2025 Helicópteros de Luxo — Todos os direitos reservados</p>
     </footer>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
 
-    <!-- ===== SCRIPTS ===== -->
-    <script src="./js/configuracoes.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('show'); 
+    menuToggle.classList.toggle('active');
+  });
+</script>
+
 </body>
-
 </html>
